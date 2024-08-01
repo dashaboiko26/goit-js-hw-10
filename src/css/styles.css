@@ -10,9 +10,9 @@
 
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
+  font-size: 32px;
   line-height: 24px;
-  font-weight: 400;
+  font-weight: 600;
 
   color: #242424;
   background-color: rgba(255, 255, 255, 0.87);
@@ -22,4 +22,33 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.timer {
+  display: flex;
+  gap: 10px;
+}
+
+.form {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+fieldset {
+  margin-top: 20px;
+  width: 400px;
+  margin-bottom: 20px;
+}
+
+button {
+  width: 224px;
+  height: 78px;
+  font-size: 32px;
 }
