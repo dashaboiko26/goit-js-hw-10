@@ -1,0 +1,113 @@
+.form {
+    width: 360px;
+}
+
+.delay-label {
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.delay-input {
+    border: 1px solid #808080;
+    border-radius: 4px;
+    padding: 8px 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    outline: none;
+    transition: border-color 250ms;
+}
+
+.delay-input:hover {
+    border-color: #000;
+}
+
+.delay-input:focus {
+    border-color: #4e75ff;
+}
+
+.fieldset {
+    border-radius: 4px;
+    border: 1px solid #808080;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 14px;
+    margin-bottom: 24px;
+    transition: border-color 250ms;
+}
+
+.fieldset:hover {
+    border-color: #000;
+}
+
+.legend {
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+}
+
+.radio-label {
+    line-height: 1.5;
+    position: relative;
+    padding-left: 34px;
+}
+
+.radio-input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.custom-radio {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    border: 1px solid #757575;
+    border-radius: 14px;
+    width: 20px;
+    height: 20px;
+}
+
+.radio-label input:checked~.custom-radio {
+    border-color: #4e75ff;
+}
+
+.custom-radio:after {
+    content: '';
+    position: absolute;
+    display: none;
+}
+
+.radio-label input:checked~.custom-radio:after {
+    display: block;
+}
+
+.radio-label .custom-radio:after {
+    top: 3px;
+    left: 3px;
+    width: 12px;
+    height: 12px;
+    border-radius: 14px;
+    background: #4e75ff;
+}
+
+.create-btn {
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #fff;
+    border-radius: 8px;
+    padding: 8px 16px;
+    background-color: #4e75ff;
+    width: 100%;
+    border: none;
+    transition: background-color 250ms;
+}
+
+.create-btn:hover {
+    background-color: #6c8cff;
+}
