@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    
+    <title>Snackbar</title>
+    <script type="module" crossorigin src="/goit-js-hw-10/commonHelpers2.js"></script>
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-10/assets/modulepreload-polyfill-3cfb730f.js">
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-10/assets/vendor-77e16229.js">
+    <link rel="stylesheet" href="/goit-js-hw-10/assets/vendor-7a007824.css">
+    <link rel="stylesheet" href="/goit-js-hw-10/assets/styles-241ea4aa.css">
+  </head>
+  <body>
+    <section>
+      <a href="./index.html">Go to home</a>
+    </section>
+
+    <form class="form">
+      <label class="delay-label">
+        Delay (ms)
+        <input class="delay-input" type="number" name="delay" required />
+      </label>
+
+      <fieldset class="fieldset">
+        <legend class="legend">State</legend>
+
+        <label class="radio-label">
+          <input
+            class="radio-input"
+            type="radio"
+            name="state"
+            value="fulfilled"
+            required
+          />
+          <span class="custom-radio"></span>
+          Fulfilled
+        </label>
+
+        <label class="radio-label">
+          <input
+            class="radio-input"
+            type="radio"
+            name="state"
+            value="rejected"
+            required
+          />
+          <span class="custom-radio"></span>
+          Rejected
+        </label>
+      </fieldset>
+
+      <button class="create-btn" type="submit">Create notification</button>
+    </form>
+
+    
+  </body>
+</html>
